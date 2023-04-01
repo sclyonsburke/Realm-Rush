@@ -23,7 +23,7 @@ public class EnemyMover : MonoBehaviour
     /// <summary>
     /// Basic setup for the enemy path and moving along it
     /// </summary>
-    private void Start()
+    private void OnEnable()
     {
         FindPath();
         ReturnToStart();
@@ -66,7 +66,7 @@ public class EnemyMover : MonoBehaviour
 
             transform.LookAt(endPosition);
 
-            while(travelPercent < 1f)
+            while(travelPercent < speed)
             {
                 travelPercent += Time.deltaTime;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
@@ -74,6 +74,6 @@ public class EnemyMover : MonoBehaviour
             }
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
