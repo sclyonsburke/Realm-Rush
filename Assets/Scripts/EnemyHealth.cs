@@ -18,6 +18,16 @@ public class EnemyHealth : MonoBehaviour
     private int currentHitPoints = 0;
 
     /// <summary>
+    /// The enemy
+    /// </summary>
+    private Enemy enemy;
+
+    private void Start()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
+    /// <summary>
     /// Sets current health to max
     /// </summary>
     private void OnEnable()
@@ -44,6 +54,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHitPoints <= 0)
         {
             gameObject.SetActive(false);
+            enemy.RewardGold();
         }
     }
 }

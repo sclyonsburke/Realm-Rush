@@ -1,23 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The script for the pool of enemy objects
+/// </summary>
 public class ObjectPool : MonoBehaviour
 {
     /// <summary>
-    /// 
+    /// The prefab for the enemy
     /// </summary>
     [SerializeField]
     GameObject enemyPrefab;
 
+    /// <summary>
+    /// The size of the object pool
+    /// </summary>
     [SerializeField]
     private int poolSize = 5;
 
+    /// <summary>
+    /// The time between enemy spawns
+    /// </summary>
     [SerializeField]
     float spawnTimer = 1f;
 
+    /// <summary>
+    /// The pool of enemies
+    /// </summary>
     GameObject[] pool;
 
+    /// <summary>
+    /// Sets up the pool of enemies at start
+    /// </summary>
     private void Awake()
     {
         PopulatePool();

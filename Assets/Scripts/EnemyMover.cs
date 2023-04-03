@@ -21,6 +21,16 @@ public class EnemyMover : MonoBehaviour
     private float speed = 1f;
 
     /// <summary>
+    /// The enemy
+    /// </summary>
+    private Enemy enemy;
+
+    private void Start()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
+    /// <summary>
     /// Basic setup for the enemy path and moving along it
     /// </summary>
     private void OnEnable()
@@ -74,6 +84,7 @@ public class EnemyMover : MonoBehaviour
             }
         }
 
+        enemy.StealGold();
         gameObject.SetActive(false);
     }
 }
