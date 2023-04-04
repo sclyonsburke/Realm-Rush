@@ -5,6 +5,7 @@ using TMPro;
 /// Labels the coordinates
 /// </summary>
 [ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class CoordinateLabeler : MonoBehaviour
 {
     /// <summary>
@@ -56,7 +57,7 @@ public class CoordinateLabeler : MonoBehaviour
             UpdateObjectName();
         }
 
-        ColorCoordinates();
+        SetLabelColor();
         ToggleLabels();
     }
 
@@ -74,7 +75,7 @@ public class CoordinateLabeler : MonoBehaviour
     /// <summary>
     /// Sets the coordinate colors based on if objects can be placed on the tile
     /// </summary>
-    private void ColorCoordinates()
+    private void SetLabelColor()
     {
         if(waypoint.IsPlaceable)
         {

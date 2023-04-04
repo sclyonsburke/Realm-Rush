@@ -16,13 +16,15 @@ public class ObjectPool : MonoBehaviour
     /// The size of the object pool
     /// </summary>
     [SerializeField]
+    [Range(0, 50)]
     private int poolSize = 5;
 
     /// <summary>
     /// The time between enemy spawns
     /// </summary>
     [SerializeField]
-    float spawnTimer = 1f;
+    [Range(0.1f, 30f)]
+    private float spawnTimer = 1f;
 
     /// <summary>
     /// The pool of enemies

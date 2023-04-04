@@ -3,6 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Keeps track of enemy health
 /// </summary>
+[RequireComponent(typeof(Enemy))]
 public class EnemyHealth : MonoBehaviour
 {
     /// <summary>
@@ -12,9 +13,15 @@ public class EnemyHealth : MonoBehaviour
     private int maxHitPoints = 5;
 
     /// <summary>
+    /// Adds amount to maxHitPoints when enemy dies
+    /// </summary>
+    [Tooltip("Adds amount to maxHitPoints when enemy dies")]
+    [SerializeField]
+    private int difficultyRamp = 1;
+
+    /// <summary>
     /// The current hit points for the enemy
     /// </summary>
-    [SerializeField]
     private int currentHitPoints = 0;
 
     /// <summary>
@@ -54,6 +61,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHitPoints <= 0)
         {
             gameObject.SetActive(false);
+            maxHitPoints += difficultyRamp;
             enemy.RewardGold();
         }
     }

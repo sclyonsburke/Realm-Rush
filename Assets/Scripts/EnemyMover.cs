@@ -5,6 +5,7 @@ using UnityEngine;
 /// <summary>
 /// The enemy movement behavior
 /// </summary>
+[RequireComponent(typeof(Enemy))]
 public class EnemyMover : MonoBehaviour
 {
     /// <summary>
@@ -25,6 +26,9 @@ public class EnemyMover : MonoBehaviour
     /// </summary>
     private Enemy enemy;
 
+    /// <summary>
+    /// Gets the enemy component
+    /// </summary>
     private void Start()
     {
         enemy = GetComponent<Enemy>();
@@ -64,6 +68,15 @@ public class EnemyMover : MonoBehaviour
     }
 
     /// <summary>
+    /// What to do when reaching the end of the path
+    /// </summary>
+    private void FinishPath()
+    {
+        enemy.StealGold();
+        gameObject.SetActive(false);
+    }
+
+    /// <summary>
     /// Moves the enemy along the path and destroys it when it reaches the destination
     /// </summary>
     private IEnumerator FollowPath()
@@ -84,7 +97,6 @@ public class EnemyMover : MonoBehaviour
             }
         }
 
-        enemy.StealGold();
-        gameObject.SetActive(false);
+        FinishPath();
     }
 }
