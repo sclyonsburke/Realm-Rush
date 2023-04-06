@@ -8,18 +8,18 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 245
-    y: 174
-    width: 1206
-    height: 715
+    x: 12
+    y: 54
+    width: 1522
+    height: 769
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1206
-    height: 665
-  m_MinSize: {x: 503, y: 321}
-  m_MaxSize: {x: 16192, y: 12117}
+    width: 1522
+    height: 719
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 22
+  controlID: 208
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,23 +59,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 921
+    x: 1160
     y: 0
-    width: 285
-    height: 665
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+    width: 362
+    height: 719
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,10 +93,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 228
-    height: 394
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 286
+    height: 425
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 394
-    width: 921
-    height: 271
+    y: 425
+    width: 1160
+    height: 294
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -149,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1206
-    height: 715
+    width: 1522
+    height: 769
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1206
+    width: 1522
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 695
-    width: 1206
+    y: 749
+    width: 1522
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -219,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 921
-    height: 665
-  m_MinSize: {x: 403, y: 321}
-  m_MaxSize: {x: 8096, y: 12117}
+    width: 1160
+    height: 719
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 23
+  controlID: 209
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,12 +244,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 921
-    height: 394
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1160
+    height: 425
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24
+  controlID: 210
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,23 +260,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 228
+    x: 286
     y: 0
-    width: 693
-    height: 394
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+    width: 874
+    height: 425
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,21 +297,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1166
-    y: 204
-    width: 284
-    height: 644
+    x: 1186
+    y: 173
+    width: 359
+    height: 698
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 5364
+    ID: 338
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 430
-    - 144
+    - 471
+    - 157
     relativeSizes:
     - 0.75
     - 0.25
@@ -321,7 +321,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 574
+    lastTotalSize: 628
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -331,44 +331,9 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 0}
-    m_NewResultList: []
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories: []
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
     m_Window: {fileID: 12}
     m_NewResultList:
-    - id: 1000
+    - id: 1004
       uniqueId: '[Realm Rush][suite]'
       name: Realm Rush
       fullName: Realm Rush
@@ -416,6 +381,246 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 12}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Realm Rush][suite]'
+      name: Realm Rush
+      fullName: Realm Rush
+      resultStatus: 1
+      duration: 0.1045198
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[EditMode][C:/Users/Sean Lyons-Burke/OneDrive/Documents/Unity Projects/Realm
+        Rush/Library/ScriptAssemblies/EditMode.dll][suite]'
+      name: EditMode.dll
+      fullName: C:/Users/Sean Lyons-Burke/OneDrive/Documents/Unity Projects/Realm
+        Rush/Library/ScriptAssemblies/EditMode.dll
+      resultStatus: 1
+      duration: 0.0693419
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Realm Rush][suite]'
+    - id: 1001
+      uniqueId: EditMode.dll/[EditMode][BankTests][suite]
+      name: BankTests
+      fullName: BankTests
+      resultStatus: 1
+      duration: 0.0366829
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[EditMode][C:/Users/Sean Lyons-Burke/OneDrive/Documents/Unity
+        Projects/Realm Rush/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1002
+      uniqueId: EditMode.dll/BankTests/[EditMode][BankTests.Bank_DepositTest]
+      name: Bank_DepositTest
+      fullName: BankTests.Bank_DepositTest
+      resultStatus: 1
+      duration: 0.0172022
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][BankTests][suite]
+    - id: 1003
+      uniqueId: EditMode.dll/BankTests/[EditMode][BankTests.Bank_WithdrawalTest]
+      name: Bank_WithdrawalTest
+      fullName: BankTests.Bank_WithdrawalTest
+      resultStatus: 1
+      duration: 0.0006342
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][BankTests][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/[EditMode][EnemyTests][suite]
+      name: EnemyTests
+      fullName: EnemyTests
+      resultStatus: 1
+      duration: 0.0142291
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: '[EditMode][C:/Users/Sean Lyons-Burke/OneDrive/Documents/Unity
+        Projects/Realm Rush/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1006
+      uniqueId: EditMode.dll/EnemyTests/[EditMode][EnemyTests.Enemy_RewardGold_NullBankTest]
+      name: Enemy_RewardGold_NullBankTest
+      fullName: EnemyTests.Enemy_RewardGold_NullBankTest
+      resultStatus: 1
+      duration: 0.0005898
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: EditMode.dll/[EditMode][EnemyTests][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/EnemyTests/[EditMode][EnemyTests.Enemy_StealGold_NullBankTest]
+      name: Enemy_StealGold_NullBankTest
+      fullName: EnemyTests.Enemy_StealGold_NullBankTest
+      resultStatus: 1
+      duration: 0.0003203
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: EditMode.dll/[EditMode][EnemyTests][suite]
+    - id: 1001
+      uniqueId: EditMode.dll/[EditMode][TowerTests][suite]
+      name: TowerTests
+      fullName: TowerTests
+      resultStatus: 1
+      duration: 0.0150648
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[EditMode][C:/Users/Sean Lyons-Burke/OneDrive/Documents/Unity
+        Projects/Realm Rush/Library/ScriptAssemblies/EditMode.dll][suite]'
+    - id: 1002
+      uniqueId: EditMode.dll/TowerTests/[EditMode][TowerTests.CreateTower_EnoughGoldTest]
+      name: CreateTower_EnoughGoldTest
+      fullName: TowerTests.CreateTower_EnoughGoldTest
+      resultStatus: 1
+      duration: 0.0024599
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][TowerTests][suite]
+    - id: 1003
+      uniqueId: EditMode.dll/TowerTests/[EditMode][TowerTests.CreateTower_NotEnoughGoldTest]
+      name: CreateTower_NotEnoughGoldTest
+      fullName: TowerTests.CreateTower_NotEnoughGoldTest
+      resultStatus: 1
+      duration: 0.0005878
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][TowerTests][suite]
+    - id: 1002
+      uniqueId: EditMode.dll/TowerTests/[EditMode][TowerTests.CreateTower_NullBank]
+      name: CreateTower_NullBank
+      fullName: TowerTests.CreateTower_NullBank
+      resultStatus: 1
+      duration: 0.0002642
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/[EditMode][TowerTests][suite]
+    m_ResultText: Realm Rush (0.105s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: c5c7ac5d
+      m_LastClickedID: 1571604421
+      m_ExpandedIDs: 5051d5c20ef63303bbf8b229c5c7ac5d8e0dc466ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,10 +641,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 245
-    y: 598
-    width: 920
-    height: 250
+    x: 12
+    y: 509
+    width: 1159
+    height: 273
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -457,34 +662,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests
+    - Assets/AssetPacks/VoxelCastle/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Tests
+  - Assets/AssetPacks/VoxelCastle/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Sean Lyons-Burke\OneDrive\Documents\Unity Projects\Realm
     Rush
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 62}
-    m_SelectedIDs: 48650000
-    m_LastClickedID: 25928
-    m_ExpandedIDs: 00000000f04d0000f24d0000004e0000244e000000ca9a3b
+    scrollPos: {x: 0, y: 3}
+    m_SelectedIDs: cec30000
+    m_LastClickedID: 50126
+    m_ExpandedIDs: 00000000d44b0000d64b0000d84b0000da4b0000e24b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefabs
-      m_OriginalName: Prefabs
+      m_Name: EditMode
+      m_OriginalName: EditMode
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 19954
+      m_UserData: 20010
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -501,7 +706,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f04d0000f24d0000
+    m_ExpandedIDs: 00000000d44b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -545,7 +750,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -577,10 +782,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1016
-    y: 260
-    width: 284
-    height: 644
+    x: 1172
+    y: 84
+    width: 361
+    height: 698
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -591,7 +796,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 25936
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -618,10 +823,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 245
-    y: 204
-    width: 227
-    height: 373
+    x: 12
+    y: 84
+    width: 285
+    height: 404
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -629,23 +834,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 36fbffff644c0000b44c0000
+      m_SelectedIDs: ac45feff
+      m_LastClickedID: -113236
+      m_ExpandedIDs: e667feffec67fefff267fefff867fefffe67feff0468feff0a68feff1068feff1668feff2068feff2668feffcc6afeffd26afeffd86afeffde6afeffe46afeffea6afefff06afefff66afefffc6afeff066bfeff0c6bfeff866dfeff8c6dfeff926dfeff986dfeff9e6dfeffa46dfeffaa6dfeffb06dfeffb66dfeffc06dfeffc66dfeffd46ffeffda6ffeffe06ffeffe66ffeffec6ffefff26ffefff86ffefffe6ffeff0470feff0e70feff1470feffa476feffa676feffa876feffaa76feffac76feffae76feffb076feffb276feffb876feffbe76feffc076feffc276feffc476feffc676feffc876feffca76feffe476feff7a7afeff7c7afeff7e7afeff807afeff827afeff847afeff867afeff887afeff8e7afeff947afeff967afeff987afeff9a7afeff9c7afeff9e7afeffa07afeffba7afeff107dfeff127dfeff147dfeff167dfeff187dfeff1a7dfeff1c7dfeff1e7dfeff247dfeff2a7dfeff2c7dfeff2e7dfeff307dfeff327dfeff347dfeff367dfeff507dfeffb27ffeffb47ffeffb67ffeffb87ffeffba7ffeffbc7ffeffbe7ffeffc07ffeffc67ffeffcc7ffeffce7ffeffd07ffeffd27ffeffd47ffeffd67ffeffd87ffefff27ffeffa882feffaa82feffac82feffae82feffb082feffb282feffb482feffb682feffbc82feffca82feffcc82feffce82feffe882feff3e85feff4085feff4285feff4485feff4685feff4885feff4a85feff4c85feff5285feff5a85feff5c85feff6085feff6285feff6485feff7e85feffec87feffee87fefff087fefff287fefff487fefff687fefff887fefffa87feff0088feff0888feff0a88feff0e88feff1088feff1288feff2c88feff9a8afeff9c8afeff9e8afeffa88afeffae8afeffb68afeffb88afeffbc8afeffbe8afeffc08afeffda8afeff9c8dfeff9e8dfeffa08dfeffa28dfeffa48dfeffa68dfeffa88dfeffaa8dfeffb08dfeffb68dfeffb88dfeffba8dfeffc28dfeffdc8dfeff0e97feff1897feff349bfeff3a9bfeff409bfeff469bfeff4c9bfeff529bfeff589bfeff669bfeff6c9bfeff6e9bfeff709bfeff729bfeff749bfeff769bfeff789bfeff7a9bfeff34adfeffb2adfeff48aefeffe6affeff88b0fefffab0feff0cb2feffd2b2feffa4b3feff82b4feff00b5feff8ab5feff68b6feff6cbdfeffc0befeff3cc0feff9ad7feffc400ffff2604ffff9604ffff0809ffffe20dffff3611ffffe614ffff4a18ffffae25ffffd62cffff8230ffff7634ffff4a38ffff6a3bffffa83fffff7443ffff3047ffff684affff2c4effff5c51ffff7c54ffff2e58ffff5c5bffff985effffbceaffff5efafffffc9c0000209d0000289d0000529d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Canvas
+        m_OriginalName: Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -65340
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -675,10 +880,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 900
-    y: 308
-    width: 691
-    height: 373
+    x: 298
+    y: 84
+    width: 872
+    height: 404
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -688,8 +893,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -101, y: -26}
+      snapOffset: {x: -101, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -913,9 +1118,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.990438, y: -15.500036, z: 47.522114}
+    m_Target: {x: -287.4735, y: 224.14014, z: 53.443466}
     speed: 2
-    m_Value: {x: 21.990438, y: -15.500036, z: 47.522114}
+    m_Value: {x: -287.4735, y: 224.14014, z: 53.443466}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -957,18 +1162,18 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 10, y: 10}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.23071209, y: 0.000581113, z: -0.00013762391, w: -0.97302175}
+    m_Target: {x: -0.5585635, y: 0.017910868, z: -0.012065131, w: -0.82918113}
     speed: 2
-    m_Value: {x: -0.23071212, y: 0.00058111304, z: -0.00013762392, w: -0.97302186}
+    m_Value: {x: -0.5585633, y: 0.017910862, z: -0.012065127, w: -0.82918084}
   m_Size:
-    m_Target: 37.97294
+    m_Target: 346.82175
     speed: 2
-    m_Value: 37.97294
+    m_Value: 346.82175
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -986,7 +1191,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: -0.23071209, y: 0.000581113, z: -0.00013762391, w: -0.97302175}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1013,10 +1218,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 473
-    y: 204
-    width: 691
-    height: 373
+    x: 298
+    y: 84
+    width: 872
+    height: 404
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1027,7 +1232,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 691, y: 352}
+  m_TargetSize: {x: 681, y: 383}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1036,16 +1241,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -345.5
-    m_HBaseRangeMax: 345.5
-    m_VBaseRangeMin: -176
-    m_VBaseRangeMax: 176
+    m_HBaseRangeMin: -340.5
+    m_HBaseRangeMax: 340.5
+    m_VBaseRangeMin: -191.5
+    m_VBaseRangeMax: 191.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1063,23 +1268,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 691
-      height: 352
+      width: 872
+      height: 383
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 345.5, y: 176}
+    m_Translation: {x: 436, y: 191.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -345.5
-      y: -176
-      width: 691
-      height: 352
+      x: -436
+      y: -191.5
+      width: 872
+      height: 383
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 691, y: 373}
+  m_LastWindowPixelSize: {x: 872, y: 404}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1105,10 +1310,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 706
-    y: 727
-    width: 920
-    height: 250
+    x: 24
+    y: 599
+    width: 1161
+    height: 272
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
