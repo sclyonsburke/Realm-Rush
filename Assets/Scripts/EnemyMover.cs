@@ -12,7 +12,7 @@ public class EnemyMover : MonoBehaviour
     /// The list of waypoints in the path
     /// </summary>
     [SerializeField]
-    private List<Waypoint> path = new List<Waypoint>();
+    private List<Node> path = new List<Node>();
 
     /// <summary>
     /// The enemy speed
@@ -27,11 +27,23 @@ public class EnemyMover : MonoBehaviour
     private Enemy enemy;
 
     /// <summary>
+    /// The Grid Manager
+    /// </summary>
+    private GridManager gridManager;
+
+    /// <summary>
+    /// The Path Finder
+    /// </summary>
+    private Pathfinder pathfinder;
+
+    /// <summary>
     /// Gets the enemy component
     /// </summary>
-    private void Start()
+    private void Awake()
     {
         enemy = GetComponent<Enemy>();
+        gridManager = FindObjectOfType<GridManager>();
+        pathfinder = FindObjectOfType<Pathfinder>();
     }
 
     /// <summary>
@@ -50,13 +62,7 @@ public class EnemyMover : MonoBehaviour
     private void FindPath()
     {
         path.Clear();
-
-        GameObject parent = GameObject.FindGameObjectWithTag("Path");
-
-        foreach(Transform child in parent.transform)
-        {
-            path.Add(child.GetComponent<Waypoint>());
-        }
+        path = pathfinder.GetNewPath();
     }
 
     /// <summary>
@@ -64,7 +70,7 @@ public class EnemyMover : MonoBehaviour
     /// </summary>
     private void ReturnToStart()
     {
-        transform.position = path[0].transform.position;
+        transform.position = gridManager.GetPositionFromCoordinates(pathfinder.StartCoordinates);
     }
 
     /// <summary>
@@ -81,17 +87,17 @@ public class EnemyMover : MonoBehaviour
     /// </summary>
     private IEnumerator FollowPath()
     {
-        foreach(Waypoint waypoint in path)
+        for(int i = 0; i < path.Count; i++)
         {
             Vector3 startPosition = transform.position;
-            Vector3 endPosition = waypoint.transform.position;
+            Vector3 endPosition = gridManager.GetPositionFromCoordinates(path[i].coordinates);
             float travelPercent = 0f;
 
             transform.LookAt(endPosition);
 
             while(travelPercent < 1f)
             {
-                travelPercent += Time.deltaTime;
+                travelPercent += Time.deltaTime * speed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
                 yield return new WaitForEndOfFrame();
             }

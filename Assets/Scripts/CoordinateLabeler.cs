@@ -21,6 +21,17 @@ public class CoordinateLabeler : MonoBehaviour
     private Color blockedColor = Color.gray;
 
     /// <summary>
+    /// The default color for the coordinates
+    /// </summary>
+    [SerializeField]
+    private Color exploredColor = Color.yellow;
+
+    /// <summary>
+    /// The coordinate color for blocked tiles
+    /// </summary>
+    private Color pathColor = new Color(1f, 0.5f, 0f);
+
+    /// <summary>
     /// The label for the coordinates
     /// </summary>
     private TextMeshPro label;
@@ -31,17 +42,17 @@ public class CoordinateLabeler : MonoBehaviour
     private Vector2Int coordinates = new Vector2Int();
 
     /// <summary>
-    /// The tile waypoint
+    /// The Grid Manager
     /// </summary>
-    private Waypoint waypoint;
+    private GridManager gridManager;
 
     /// <summary>
     /// Sets up the label and waypoint for the tile
     /// </summary>
     private void Awake()
     {
+        gridManager = FindObjectOfType<GridManager>();
         label = GetComponent<TextMeshPro>();
-        waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
         label.enabled = false;
     }
@@ -78,14 +89,35 @@ public class CoordinateLabeler : MonoBehaviour
     /// </summary>
     private void SetLabelColor()
     {
-        if(waypoint.IsPlaceable)
+        if(gridManager == null)
         {
-            label.color = defaultColor;
+            return;
         }
-        else
+
+        Node node = gridManager.GetNode(coordinates);
+
+        if(node == null)
+        {
+            return;
+        }
+
+        if(!node.isWalkable)
         {
             label.color = blockedColor;
         }
+        else if(node.isPath)
+        {
+            label.color = pathColor;
+        }
+        else if(node.isExplored)
+        {
+            label.color = exploredColor;
+        }
+        else
+        {
+            label.color = defaultColor;
+        }
+
     }
 
     /// <summary>
@@ -93,8 +125,13 @@ public class CoordinateLabeler : MonoBehaviour
     /// </summary>
     private void DisplayCoordinates()
     {
-        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
-        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);
+        if(gridManager == null)
+        {
+            return;
+        }
+
+        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / gridManager.UnityGridSize);
+        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / gridManager.UnityGridSize);
 
         label.text = coordinates.x + "," + coordinates.y;
     }

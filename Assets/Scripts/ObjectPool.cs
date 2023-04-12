@@ -10,7 +10,7 @@ public class ObjectPool : MonoBehaviour
     /// The prefab for the enemy
     /// </summary>
     [SerializeField]
-    GameObject enemyPrefab;
+    private GameObject enemyPrefab;
 
     /// <summary>
     /// The size of the object pool
@@ -29,7 +29,7 @@ public class ObjectPool : MonoBehaviour
     /// <summary>
     /// The pool of enemies
     /// </summary>
-    GameObject[] pool;
+    private GameObject[] pool;
 
     /// <summary>
     /// Sets up the pool of enemies at start
@@ -39,28 +39,36 @@ public class ObjectPool : MonoBehaviour
         PopulatePool();
     }
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Starts the enemy spawning coroutine
+    /// </summary>
     private void Start()
     {
         StartCoroutine(SpawnEnemy());
     }
 
+    /// <summary>
+    /// Populates the pool
+    /// </summary>
     private void PopulatePool()
     {
         pool = new GameObject[poolSize];
 
-        for(int i = 0; i < poolSize; i++)
+        for (int i = 0; i < pool.Length; i++)
         {
             pool[i] = Instantiate(enemyPrefab, transform);
             pool[i].SetActive(false);
         }
     }
 
+    /// <summary>
+    /// Enables the enemy object
+    /// </summary>
     private void EnableObjectInPool()
     {
         for (int i = 0; i < poolSize; i++)
         {
-            if(!pool[i].activeSelf)
+            if(pool[i].activeInHierarchy == false)
             {
                 pool[i].SetActive(true);
                 return;
@@ -69,9 +77,9 @@ public class ObjectPool : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Spawns the enemy
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The wait time between spawns</returns>
     private IEnumerator SpawnEnemy()
     {
         while(true)
